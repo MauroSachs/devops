@@ -1,0 +1,46 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgres:latest
+    container_name: tcc-postgres
+    environment:
+      POSTGRES_USER: tccjava
+      POSTGRES_PASSWORD: tccjava
+      POSTGRES_DB: tccjava
+
+    volumes:
+      - postgres_volume:/var/lib/postgresql/data
+      - ./api/data/init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+    networks:
+      - tcc
+    command: postgres -c max_connections=300 -c shared_buffers=512MB -c effective_cache_size=1GB
+
+  api:
+    container_name: tcc-api
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    ports:
+      - "8080:8080"
+    networks:
+      - tcc
+    depends_on:
+      - db
+
+  frontend:
+    container_name: tcc-frontend
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "80:80"
+    networks:
+      - tcc
+volumes:
+  postgres_volume:
+
+networks:
+  tcc:

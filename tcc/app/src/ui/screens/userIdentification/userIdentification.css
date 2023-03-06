@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+.identification-screen-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.identification-left-card {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.identification-right-card {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.identification-smaller-card {
+    height: 100%;
+    width: 35%;
+    background-color: rgb(42, 62, 92);
+    color: white;
+    text-align: center;
+    padding: 50px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.identification-larger-card {
+    height: 100%;
+    flex-grow: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.identification-form {
+    background-color:transparent;
+    margin: 0px 200px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    color: rgb(55, 65, 80);
+    ;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.form-item input {
+    padding: 5px;
+    background-color: transparent;
+    border: solid rgb(55, 65, 80) 1px;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+}
+
+.identification-form button {
+    padding: 25px 0;
+    border: transparent;
+    border-radius: 10px;
+    /* background-color: rgb(55, 65, 80); */
+    background-color:rgb(42, 62, 92);
+    color: white;
+    width: 100%;
+}

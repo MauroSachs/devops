@@ -1,0 +1,14 @@
+.comments-list-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(56, 104, 158, 0.295);
+}
+.comment-card {
+    margin: 10px;
+    padding:10px 30px;
+    background-color: transparent;
+    border-radius: 20px;
+}
+.comment-card p {
+    margin-left: 20px;
+}

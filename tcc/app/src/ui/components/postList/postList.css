@@ -1,0 +1,135 @@
+.posts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px 50px;
+    background-color: rgba(2, 2, 2, 0.37);
+    flex-grow: 1;
+}
+
+.post-card {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 50px; */
+    border: solid rgba(87, 87, 87, 0.767)1px;
+    background-color: rgb(12, 44, 71);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.post-left-info {
+    width: 40%;
+    padding: 5px 20px;
+    text-align: center;
+
+    
+    /* background-color: rgba(2, 2, 2, 0.37); */
+    border-right: solid rgba(87, 87, 87, 0.767) 1px;
+    border-top-left-radius: 20px;
+}
+
+.post-right-info {
+    max-width: 60%;
+    min-height: 100%;
+    background-color: transparent;
+    padding-left: 20px;
+    flex-grow: 1;
+}
+.post-right-info p {
+    height: 100%;
+}
+.post-interactions {
+    border: solid rgba(87, 87, 87, 0.767)1px;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.11);
+    width: 100%;
+}
+.post-interactions-info {
+    border-top: none;
+    border-bottom: solid rgba(87, 87, 87, 0.767) 1px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.post-interactions-info button {
+    background-color: transparent;
+    border: none;
+    width: 20%;
+    height: 30px;
+    color: white;
+}
+.post-interactions-info button:hover {
+    background-color: rgba(10, 14, 54, 0.308);
+    border-radius: 20px;
+}
+.post-interactions-info span {
+    width: 20%;
+    text-align: center;
+    align-self: center;
+}
+.post-interactions-buttons {
+    border-top: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 0px 0;
+   
+}
+.post-interacions-buttons button {
+    background-color: transparent;
+    border: none;
+    width: 50%;
+    height: 50px;
+    color: white;
+}
+.post-interacions-buttons button:hover {
+    background-color: rgba(10, 14, 54, 0.308);
+    border: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 50%;
+    height: 50px;
+    color: white;
+}
+.post-comment-form textarea {
+    background-color: transparent;
+    resize: none;
+    width: 100%;
+    border: none;
+    color: white;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+.post-comment-form textarea:focus {
+    outline: none;
+}
+.post-comment-form button {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 10px;
+}
+.post-comment-form button:hover {
+    background-color: rgba(10, 14, 54, 0.308);
+    border: none;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.disabled {
+    opacity: 30%;
+}
+.post-alter {
+    background-color: transparent;
+    color: white;
+    border: none;
+    height: 30px;
+    border-top:solid rgba(87, 87, 87, 0.767) 1px;
+
+}

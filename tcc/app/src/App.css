@@ -1,0 +1,8 @@
+.app-container {
+    /* background: linear-gradient(90deg, rgba(9,69,121,1) 28%, rgba(25,81,130,1) 100%); */
+    background-color: rgb(12, 44, 71);
+    height: 100vh;
+    padding: 0px 400px;
+    font-family: 'Roboto';
+    color: white;
+}
